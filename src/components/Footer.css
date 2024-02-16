@@ -1,0 +1,87 @@
+/* Footer.css */
+.site-footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 300px;
+    font-family: 'Arial', sans-serif; /* Use your preferred font */
+  }
+  
+  .footer-logo img {
+    max-width: 100px; /* Adjust to your logo's size */
+    margin-right: 200px;
+    margin-left: 200px; /* Increased space between logo and text */
+
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content:space-between;
+    width: 70%;
+    margin-right: 10%;
+  }
+  
+  .footer-contact,
+  .footer-links,
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1px; /* Decreased space between text boxes */
+  }
+  
+  .footer-contact p,
+  .footer-links a,
+  .footer-nav a {
+    margin: 3px 0; /* Decreased space between each text item */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Removes underline from links */
+  }
+  
+  .footer-links a:hover,
+  .footer-nav a:hover {
+    text-decoration: underline; /* Adds underline on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .site-footer {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .footer-logo img {
+      margin-bottom: 20px; /* Space between logo and text on smaller screens */
+      margin-right: 0; /* Reset right margin on smaller screens */
+    }
+  
+    .footer-content {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .footer-contact,
+    .footer-links,
+    .footer-nav {
+      padding: 0;
+      margin-bottom: 20px; /* Space between text groups on smaller screens */
+    }
+  }
+  
+
+  .instagram-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Space between logo and text */
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .instagram-logo {
+    width: 30px; /* Adjust the size as needed */
+    height: auto;
+  }
+  

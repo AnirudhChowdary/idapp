@@ -1,0 +1,58 @@
+/* Testimonials.css */
+.testimonials {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .testimonials h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonials-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .testimonial {
+    flex: 1;
+    min-width: calc(25% - 20px); /* Minimum width for 3 items per line minus gap */
+    max-width: calc(25% - 20px); /* Maximum width for 3 items per line minus gap */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* This adds a shadow, remove if not needed */
+    padding: 15px;
+    border-radius: 10px; /* If you want to remove the rounded corners as well, set this to 0 */
+    margin-bottom: 20px; /* Space between rows */
+  }
+  
+  .testimonial-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* If you want the images to have no rounded corners, set this to 0 */
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .testimonial {
+      min-width: calc(50% - 20px); /* 2 items per line on smaller screens */
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .testimonial {
+      min-width: 100%; /* 1 item per line on very small screens */
+      max-width: 100%;
+    }
+  }
+  

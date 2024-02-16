@@ -1,0 +1,31 @@
+/* src/Navbar.css */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    /* Align items to the left */
+    align-items: center;
+    /* This vertically centers the nav items */
+    background-color: transparent;
+    /* Makes the background transparent */
+    padding: 10px;
+}
+
+
+
+.navbar a {
+    text-decoration: none;
+    color: grey;
+    /* Default to grey for non-active links */
+    transition: color 0.3s;
+    /* Smooth transition for color change */
+    padding: 10px;
+    margin-right: 20px;
+    /* Adds some space between the links */
+}
+
+/* Highlight the active link */
+.navbar a.active,
+.navbar a:hover {
+    color: black;
+    /* Original color for active link and on hover */
+}

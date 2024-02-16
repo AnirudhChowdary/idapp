@@ -1,0 +1,162 @@
+/* HomePage.css */
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400&display=swap');
+
+.homePage {
+    font-family: Arial, sans-serif;
+  }
+
+  
+  .image-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 0 40%;
+    gap: 20px;
+    overflow-x: auto;
+    max-width: 100%; /* Ensures the container does not exceed the viewport width */
+  }
+  
+  .image-container img {
+    flex: 4; /* Allows images to grow to fill the container, maintaining aspect ratio might require additional styling */
+  }
+
+  .uniform-size {
+    width: 300px; /* Set your desired width */
+    height: 300px; /* Set your desired height */
+    object-fit: cover; /* Ensures the image covers the area, can be adjusted */
+  }
+  
+  .introSection {
+    color: white;
+    background-size: cover;
+    padding: 20px;
+    text-align: center;
+    height: 50vh;
+    background-position: center center; 
+  }
+
+  
+  .ourServices {
+    text-align: center;
+  }
+  
+  .ourServices .images img {
+    width: 33%;
+    padding: 5px;
+  }
+  
+  .tips {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .custom-font {
+    font-family: 'Italianno', cursive;
+    font-size: 50px;
+  }
+  
+
+  .get-quote-button {
+    background-color: white; /* Outer box color */ 
+    color: black; /* Initial text color */
+    padding: 20px 60px; /* Adjust padding as needed */
+    border: 2px solid black; /* Orange border */
+    cursor: pointer; /* Change mouse cursor to pointer */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove text decoration for link elements, if used */
+    display: inline-block; /* Allow width and height */
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for colors and border */
+  }
+  
+  .get-quote-button:hover {
+    background-color: grey; /* Button background turns orange on hover */
+    color: black; /* Text color turns black on hover */ 
+  }
+
+  .aboutUs {
+    text-align: center; /* Center aligns the text and content */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the child elements */
+    gap: 30px; /* Adds space between child elements */
+  }
+  
+  .aboutUs .custom-font, .aboutUs p {
+    max-width: 900px; /* Sets the maximum width of the text lines */
+    text-align: center; /* Aligns the text to the left within the centered column */
+  }
+
+  p, h2{
+ font-size: 25px;
+ font-family: 'Josefin Slab', serif;
+  }
+ 
+  h2{
+    font-size: 60px;
+  }
+
+  section{
+    box-shadow: 0 0px 0px rgba(0,0,0,0.1); /* Adds a shadow to the bottom */
+    padding-bottom: 50px; /* Adds some space inside the section, above the shadow */
+    margin-bottom: 5px; /* Adds space after the section, before the next one starts */
+    padding-top: 50px;
+  }
+
+  /* Container for each service */
+  .service-imgbx {
+    flex: 0 0 auto; /* This prevents the images from growing and respects their width */
+    position: relative;
+    width: 300px; /* Set a fixed width */
+    height: 300px; /* Set a fixed height */
+    margin-bottom: 24px; /* Add space below each image box */
+    overflow: hidden;
+    border-radius: 30px;
+  }
+
+/* Styles for the image */
+.service-imgbx img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Text overlay */
+.service-txtx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+  color: white;
+  transition: background-color 0.3s ease;
+  opacity: 0; /* Initially hidden */
+}
+
+/* On hover, adjust the background color and opacity */
+.service-imgbx:hover .service-txtx {
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  opacity: 1;
+}
+
+/* Text styles */
+.service-txtx h4 {
+  font-size: 24px; /* Adjust to your preference */
+}
+
+.service-txtx span {
+  font-size: 16px; /* Adjust to your preference */
+}

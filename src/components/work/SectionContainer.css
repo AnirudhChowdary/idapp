@@ -1,0 +1,73 @@
+.section-container {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center; /* Centers content horizontally */
+  }
+  
+  .top-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Ensure the top section spans the full width */
+    max-width: 1200px; /* Or any max-width you prefer */
+    margin-bottom: 100px;
+    margin-top: 100px; /* Adjust as needed */
+  }
+  
+  .text-content {
+    flex-basis: 50%; /* Adjust the width as needed */
+  }
+  
+  .main-image {
+    flex-basis: 50%; /* Adjust the width as needed */
+    /* The scroll effect will be added here later */
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .main-image img {
+    width: 60%;
+    height: 500px;
+    padding-bottom: 60px;
+  }
+  
+  .gallery-section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch; /* Default alignment for flex items */
+    gap: 20px; /* Adjust the gap as needed */
+  }
+  
+  .gallery-image {
+    /* Flex item takes the size of the image plus any margin */
+    margin-bottom: 60px; /* Adds space between the rows */
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  }
+  
+  .gallery-image img {
+    width: 100%; /* Image will fill the width of the flex item */
+    height: 500px; /* Maintain aspect ratio */
+    display: block;
+  }
+  
+  .come-in {
+    animation: comeIn 0.8s ease forwards;
+  }
+  
+  @keyframes comeIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+

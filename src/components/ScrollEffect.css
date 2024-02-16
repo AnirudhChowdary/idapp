@@ -1,0 +1,112 @@
+/* ScrollEffect.css */
+.scroll-effect-container {
+    display: flex;
+    align-items: flex-start;
+    min-height: 100vh; /* Keeps items aligned at the top */
+  }
+  
+
+.content-wrapper {
+    width: 100%;
+    max-width: auto ; /* Adjust based on your layout */
+    display: flex;
+}
+
+.moving-content {
+    flex-grow: 1;
+    /* Removed overflow-y and height properties to allow natural document flow scrolling */
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 60px; /* Add padding around the content for spacing */ /* Adjust padding as needed */
+    width: 50%; 
+    overflow: visible;
+  } 
+
+  .fixed-content {
+    position: sticky;
+    top: 0; /* Adjust as needed based on your header/nav height */
+    height: 100vh; /* Full viewport height */
+    width: 50%; /* Or adjust based on your layout */
+  }
+
+.image_block {
+    /* Ensures the container centers the image and does not exceed the bounds of the moving content */
+    display: flex;
+    justify-content: center; /* Center image horizontally */
+    align-items: center; /* Center image vertically */
+    overflow: hidden; /* Prevents the image from overflowing */
+    max-width: 100%; /* Ensures the container itself does not exceed its parent width */
+    margin-top: 20px; /* Adds some space above the image */
+}
+
+.image_block .smallImage {
+    width: 100%; /* Makes the image responsive, adjusting its width to the container */
+    max-height: 100vh; /* Optional: limits the image height to the viewport height */
+    object-fit: contain; /* Ensures the aspect ratio is preserved while fitting within the container */
+}
+.moving-content::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, and Opera */
+}
+
+
+
+  .fixed-content img {
+    width: 95%;
+    height: 100%; /* Adjust based on your preference for image display */
+    object-fit: cover; /* Ensures image covers the area */
+    padding: 10px;
+    padding-right: 10px
+  }
+
+  .text-block_footer {
+    position: relative; /* Position the footer at the bottom of the text block */
+    bottom: 0; /* Align to the bottom */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width of the text block */
+    display: flex;
+    flex-direction: column; /* Stack the buttons vertically */
+    align-items: flex-start; /* Align buttons to the start of the flex container */
+    padding-bottom: 150px;
+  }
+  
+  .text-block_footer button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.arrow-icon {
+    margin-bottom: -5px; /* Adjust alignment of SVG icon with text if necessary */
+  }
+
+  .text-block_footer button:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+
+.button-icon {
+    width: 10px; /* Adjust based on your design */
+    height: 10px;
+}
+
+.text_block {
+    /* If using position: absolute;, ensure it's within a properly sized relative container */
+    position: relative;
+    padding-bottom: 70px; /* Adjust or remove padding if it's causing issues */
+  }
+  
+
+  .text-block_header h2 {
+    font-size: 2em; /* Large font size for the header */
+    color: #333; /* Dark text color for contrast */
+    margin-bottom: 1em; /* Space below the header */
+  }
+  
+  .text-block_content p {
+    font-size: 20px; /* Standard font size for the content */
+    margin-bottom: 5em;
+    width: auto; /* Space below the paragraph */
+  }
+  

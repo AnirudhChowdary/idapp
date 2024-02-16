@@ -11,3 +11,20 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5); /* Or any color fitting your design */
+}
+
+.content {
+  padding-top: 70px; /* Adjust based on your navbar's height */
+}
+
+main {
+  padding-top: 70px; /* Ensure this matches or exceeds your navbar's height */
+}
