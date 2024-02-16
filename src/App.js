@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './components/Home';
-import ProjectContainer from './components/work/ProjectContainer';
 import SectionContainer from './components/work/SectionContainer';
 // import AboutPage from './/AboutPage';
 // Import other pages and components
