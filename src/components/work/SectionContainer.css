@@ -1,73 +1,107 @@
-.section-container {
+/* General styles */
+.cInnerContent {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 80px;
     background-color: black;
     color: white;
-    padding: 20px;
-    display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centers content vertically */
-  align-items: center; /* Centers content horizontally */
   }
   
+  /* Top section styles */
   .top-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%; /* Ensure the top section spans the full width */
-    max-width: 1200px; /* Or any max-width you prefer */
-    margin-bottom: 100px;
-    margin-top: 100px; /* Adjust as needed */
+    margin-bottom: 50px;
   }
   
-  .text-content {
-    flex-basis: 50%; /* Adjust the width as needed */
-  }
-  
-  .main-image {
-    flex-basis: 50%; /* Adjust the width as needed */
-    /* The scroll effect will be added here later */
-    display: flex;
-  justify-content: center;
-  align-items: center;
+  .text-content h1 {
+    text-align: center;
+    margin: 40px 0;
   }
   
   .main-image img {
-    width: 60%;
-    height: 500px;
-    padding-bottom: 60px;
-  }
-  
-  .gallery-section {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: stretch; /* Default alignment for flex items */
-    gap: 20px; /* Adjust the gap as needed */
-  }
-  
-  .gallery-image {
-    /* Flex item takes the size of the image plus any margin */
-    margin-bottom: 60px; /* Adds space between the rows */
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-  }
-  
-  .gallery-image img {
-    width: 100%; /* Image will fill the width of the flex item */
-    height: 500px; /* Maintain aspect ratio */
+    width: 100%;
+    max-width: 600px; /* Adjust based on your preference */
     display: block;
+    margin: 0 auto; /* Center image */
   }
   
-  .come-in {
-    animation: comeIn 0.8s ease forwards;
+  /* Features and grid system */
+  .features {
+    display: flex;
+    flex-direction: column;
   }
   
-  @keyframes comeIn {
-    from {
-      opacity: 0;
-      transform: translateY(50px);
+  .feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .ipsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Spacing between grid items */
+  }
+  
+  .ipsGrid_span5, .ipsGrid_span7 {
+    flex: 0 0 auto;
+  }
+  
+  .ipsGrid_span5 {
+    width: 40%; /* Adjust the width as needed */
+  }
+  
+  .ipsGrid_span7 {
+    width: 58%; /* Adjust the width as needed */
+  }
+  
+  /* Card styling for featured images */
+  .card {
+    padding: 10px;
+    background: black;
+    
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Animation-related styles */
+  .gs_reveal {
+    visibility: hidden; /* Initially hide elements to be animated */
+  }
+  
+  /* Utility classes */
+  .ipsType_right {
+    text-align: right;
+  }
+  
+  .ipsType_center {
+    text-align: center;
+  }
+  
+  .ipsSpacer_bottom_double {
+    margin-bottom: 60px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .ipsGrid {
+      flex-direction: column;
     }
-    to {
-      opacity: 1;
-      transform: translateY(0);
+  
+    .ipsGrid_span5, .ipsGrid_span7 {
+      width: 100%; /* Full width on smaller screens */
+    }
+  
+    .feature {
+      flex-direction: column;
+    }
+  
+    .featured-image-container, .ipsGrid_span7 {
+      text-align: center; /* Center content on smaller screens */
     }
   }
-
+  

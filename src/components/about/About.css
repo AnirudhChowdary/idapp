@@ -1,0 +1,225 @@
+.About{
+    background-color: white;
+    color: black ;
+}
+
+.moto{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+}
+
+.moto .title{
+    width: 50%;
+    padding: 20px;
+}
+
+.moto .description{
+    width: 50%;
+    height: fit-content;
+}
+
+
+.together{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.together .left{
+    flex-basis: 50%;
+}
+
+.together .right{
+    flex-basis: 50%;
+}
+
+.together .right img{
+    width: 80%;
+    padding-left: 5%;
+}
+
+.together .btn-scall{
+ background: transparent;
+ color: black;
+ width: fit-content;
+ height: fit-content;
+ padding: 10% 0 ;
+}
+
+.together .btn-scall:hover{
+    text-decoration: underline; /* Underline on hover */
+   }
+
+/* .right img{
+    width: 600px;
+    height: auto;
+} */
+
+.individuals .first{
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.individuals .first .right{
+   width: 50%;
+   padding-left:5%;
+ 
+}
+
+.individuals .first .left{
+    max-width: 50%;
+}
+.individuals .first .left img{
+    width: 100%;
+}
+
+.individuals .second{
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex; 
+    padding : 10% 0 10% 0;
+}
+
+.individuals .second.right{
+    max-width: 50%;
+    padding: 60px;
+ 
+ }
+ 
+ .individuals .second .left{
+     max-width: 50%;
+     
+ }
+
+ .individuals .second .right img{
+      width: 100%;
+}
+
+.together .left .together-list{
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* Remove default padding */
+    margin-left: 0; /* Adjust based on layout */
+}
+
+.together .left  .together-list  li {
+    margin-bottom: 3%; /* Adjust spacing between list items */
+    padding-left: 20px; /* Space for the custom bullet */
+    position: relative; /* Needed for the absolute positioning of the pseudo-element */
+}
+.together .left  .together-list  li::before {
+    content: "-"; /* Custom bullet */
+    color: #000; /* Bullet color */
+    font-size: 20px; /* Bullet size */
+    position: absolute;
+    left: 0; /* Align with the text indent */
+    top: 0; /* Adjust based on line-height for vertical alignment */
+}
+
+
+@media (max-width:430px) {
+    .moto{
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .moto .title{
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .moto .description{
+        width: 100%;
+        height: fit-content;
+    }
+    
+    .together{
+        max-width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .together .left{
+        flex-basis: 100%;
+    }
+    
+    .together .right{
+        flex-basis: 100%;
+    }
+    
+    .together .right img{
+        width: 80%;
+        padding-left: 5%;
+    }
+    
+    .together .btn-scall{
+     background: transparent;
+     color: black;
+     width: fit-content;
+     height: fit-content;
+     padding: 10% 0 ;
+    }
+    
+    .together .btn-scall:hover{
+        text-decoration: underline; /* Underline on hover */
+       }
+    
+    /* .right img{
+        width: 600px;
+        height: auto;
+    } */
+    
+    .individuals .first{
+        max-width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .individuals .first .right{
+       width: 100%;
+       padding-left:5%;
+     
+    }
+    
+    .individuals .first .left{
+        max-width: 100%;
+    }
+    .individuals .first .left img{
+        width: 100%;
+    }
+    
+    .individuals .second{
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex; 
+        padding : 10% 0 10% 0;
+        flex-direction: column;
+    }
+    
+    .individuals .second.right{
+        max-width: 100%;
+        padding: 60px;
+     
+     }
+     
+     .individuals .second .left{
+         max-width: 100%;
+         
+     }
+    
+     .individuals .second .right img{
+          width: 100%;
+    }
+}

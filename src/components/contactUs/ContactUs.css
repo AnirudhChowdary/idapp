@@ -1,0 +1,60 @@
+.contactUs {
+    background-color: black;
+}
+
+.header {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding-top: 5px;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(7, 7, 7);
+    color: white;
+}
+
+.form-area, .content-area {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.content-area {
+    text-align: center;
+}
+
+.content-area img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+

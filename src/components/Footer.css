@@ -61,6 +61,8 @@
       flex-direction: column;
       align-items: flex-start;
     }
+
+
   
     .footer-contact,
     .footer-links,
@@ -70,7 +72,30 @@
     }
   }
   
+  .footer-contact {
+    display: flex;
+    flex-direction: column;
+}
 
+.contact-item {
+    display: flex;
+    align-items: center; /* Aligns the icon and text vertically */
+    margin-bottom: 10px; /* Adds some space between each contact item */
+}
+
+.contact-item p {
+    margin: 0 0 0 15px; /* Removes default margin and adds space between icon and text */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center; /* Aligns the icon and text vertically */
+    margin-bottom: 10px; /* Adds some space between each contact item */
+}
+
+.contact-item p {
+    margin: 0 0 0 8px; /* Removes default margin and adds space between icon and text */
+}
   .instagram-link {
     display: flex;
     align-items: center;
