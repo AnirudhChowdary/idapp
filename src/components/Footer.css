@@ -46,30 +46,31 @@
   }
   
   /* Responsive adjustments */
-  @media (max-width: 768px) {
+  @media (max-width: 450px) {
     .site-footer {
       flex-direction: column;
-      align-items: flex-start;
+      height: auto;
+      width: auto;
     }
   
     .footer-logo img {
-      margin-bottom: 20px; /* Space between logo and text on smaller screens */
-      margin-right: 0; /* Reset right margin on smaller screens */
+      margin-bottom: 25px; /* Space between logo and text on smaller screens */
+      margin-left:auto;
+      margin-right: auto; /* Reset right margin on smaller screens */
     }
   
     .footer-content {
       flex-direction: column;
-      align-items: flex-start;
+      max-width: fit-content;
     }
 
-
-  
     .footer-contact,
     .footer-links,
     .footer-nav {
       padding: 0;
       margin-bottom: 20px; /* Space between text groups on smaller screens */
     }
+
   }
   
   .footer-contact {
@@ -98,6 +99,7 @@
 }
   .instagram-link {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 8px; /* Space between logo and text */

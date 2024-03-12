@@ -18,8 +18,8 @@
     /* Default to grey for non-active links */
     transition: color 0.3s;
     /* Smooth transition for color change */
-    padding: 10px;
-    margin-right: 20px;
+    padding-right: 20px;
+    margin-right: 0px;
     /* Adds some space between the links */
 }
 

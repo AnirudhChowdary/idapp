@@ -29,8 +29,14 @@ const ContactUs = () => {
   return (
 
     <div className='contactUs'>
-      <div className='header'><h2>We would like to hear from you</h2></div>
       <div className="container">
+      <div className="content-area">
+          <div className="contact-info">
+            <h2 className="contact-title">Have Any Questions?</h2>
+            <p>Lorem ipsum is a dummy text used to replace text in some areas just for the purpose of an example. It can be used in publishing and graphic design. The lorem ipsum text is usually a section of a Latin text by Cicero with words altered, added and removed to make it nonsensical.</p>
+          </div>
+          <img src={contactUsImage} alt="Contact Us" />
+        </div>
         <div className="form-area">
           <form onSubmit={handleSubmit}>
             <h2>Contact Us</h2>
@@ -58,15 +64,8 @@ const ContactUs = () => {
               <label>Requirements:</label>
               <textarea value={requirements} onChange={(e) => handleInputChange(e, setRequirements)}></textarea>
             </div>
-            <button type="submit">Submit</button>
+            <button className="submitButton" type="submit">Submit</button>
           </form>
-        </div>
-        <div className="content-area">
-          <div className="contact-info">
-            <h2 className="contact-title">Have Any Questions?</h2>
-            <p>Lorem ipsum is a dummy text used to replace text in some areas just for the purpose of an example. It can be used in publishing and graphic design. The lorem ipsum text is usually a section of a Latin text by Cicero with words altered, added and removed to make it nonsensical.</p>
-          </div>
-          <img src={contactUsImage} alt="Contact Us" />
         </div>
       </div>
       <Footer />

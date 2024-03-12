@@ -1,5 +1,5 @@
 .contactUs {
-    background-color: black;
+    background-color: rgb(218, 110, 110);
 }
 
 .header {
@@ -58,3 +58,57 @@ button {
     margin-top: 20px;
 }
 
+@media (max-width:500px) {
+
+    .contactUs .header {
+        text-align: center;
+        font-size: 30px;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgb(10, 10, 10);
+        color: white;
+    }
+    
+    .form-area, .content-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 4px;
+    }
+    
+    .submitButton {
+        cursor: pointer;
+        padding: 10px 20px;
+        background-color: rgb(250, 250, 250);
+        color: rgb(10, 9, 9);
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+    
+    .content-area {
+        text-align: center;
+    }
+    
+    .content-area img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 20px;
+    } 
+}
